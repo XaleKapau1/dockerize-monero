@@ -3,7 +3,7 @@
 # Last Edited: 2021-11-24 14:38 CST
 # Dockerfile for creating an image of Ubuntu with the Monero wallet and daemon installed (https://github.com/monero-project/monero)
 
-FROM ubuntu:latest AS builder
+FROM ubuntu:latest
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -y \
   build-essential \
